@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <header class="header">
+      <nav class="header__nav">
+        <!-- Logo -->
+        <a class="logo"  href="#">
+          <img src="img/icon.png" alt="">
+        </a>
+          <ul class="header__menu">
+            <li><a href="menu.html"> Menu </a></li>
+            <li><a href="chefs.html">Chefs</a></li>
+            <li><a href="vacancy.html"> Vacancy </a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="report.html">Report</a></li>
+          </ul>
+          <div>
+            <button class="btn">Order now</button>
+          </div>
+      </nav>
+    </header>
+  </head>
+  <body>
+    <div class="container-vac">
+        <h3>Vacancy</h3>
+      <form>
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+        />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your email.."
+        />
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" placeholder="Your age.." />
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Georgia</option>
+          <option value="usa">USA</option>
+        </select>
+
+        <label for="phone">Phone number</label>
+        <input type="tel" />
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Georgia</option>
+          <option value="usa">USA</option>
+        </select>
+
+        <label for="Description">Description</label>
+        <textarea
+          id="description"
+          name="description"
+          placeholder="Write something.."
+          style="height: 200px"
+        ></textarea>
+
+        <input class="submit-btn" type="submit" value="Submit" />
+      </form>
+
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const btn = $(".submit-btn");
+      btn.click(function () {
+        alert("Form submitted successfully");
+      });
+    </script>
+  </body>
+</html>
